@@ -1,0 +1,8 @@
+PyQt5
+pytesseract
+pdf2image
+python-docx
+openpyxl
+python-pptx
+Pillow
+pyinstaller
