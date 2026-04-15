@@ -1,22 +1,28 @@
-# PDF SCANNER PRO
+# PDF SCANNER PRO PREMIUM
 
-## Project Documentation
+Desktop PDF toolkit built with PyQt5.
 
-PDF Scanner Pro is a powerful application designed to convert physical documents into digital formats with high precision.
+## Premium Features Included
+- Create PDF from multiple images (JPG/PNG/BMP/TIFF)
+- Merge multiple PDFs into one file
+- Split a PDF by page range
+- OCR text extraction from image/PDF sources
+- One-click export of OCR text to `.txt`
+- Dark modern UI with progress + activity logs
 
-### Features:
-- High-quality scanning
-- Multiple format support (PDF, JPG, etc.)
-- User-friendly interface
-- Optical Character Recognition (OCR) capability
+## Installation
+```bash
+pip install -r requirements.txt
+```
 
-### Download Instructions:
-1. Visit the [Releases page](https://github.com/birendradoley/PDF-SCANNER-PRO/releases).
-2. Choose the latest version of PDF Scanner Pro.
-3. Download the appropriate installer for your operating system.
-4. Follow the installation instructions provided in the download.
+## Run
+```bash
+python main.py
+```
 
-## Usage Instructions
-After installation, simply launch the application and follow the on-screen prompts to start scanning your documents. 
+## Notes for OCR
+OCR requires external native tools in addition to Python dependencies:
+- Tesseract OCR engine
+- Poppler (used by `pdf2image` for PDF page conversion)
 
-For any issues or feature requests, please raise an issue in the GitHub repository.
+If those binaries are missing, OCR actions will show a warning while non-OCR PDF tools continue to work.
