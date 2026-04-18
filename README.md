@@ -1,22 +1,50 @@
-# PDF SCANNER PRO
+# AutoCAD Pro Clone Desktop App (PyQt5)
 
-## Project Documentation
+A complete desktop CAD-style application built with PyQt5.
 
-PDF Scanner Pro is a powerful application designed to convert physical documents into digital formats with high precision.
+## What this app now includes
+- Full desktop shell with **menu bar**, **toolbar**, **sidebar**, and **status bar**.
+- Drafting tools: **line**, **rectangle**, **circle**, and **select** mode.
+- Layer workflow:
+  - Add/remove layers
+  - Active layer switching
+  - Layer color changes
+  - Layer visibility toggling
+- Precision controls:
+  - Configurable grid
+  - Grid show/hide
+  - Snap to grid
+- Navigation:
+  - Mouse-wheel zoom
+  - Zoom in/out/reset buttons
+  - Middle-mouse pan
+- Editing:
+  - Select/move objects
+  - Duplicate and delete selected objects
+  - Undo/redo
+  - Clear canvas
+- File operations:
+  - New/Open/Save/Save As project files (`.json`)
+  - Export canvas to PNG
+  - Unsaved changes warning on close/new/open
+- Object inspector panel with type, layer, points, length, and area.
 
-### Features:
-- High-quality scanning
-- Multiple format support (PDF, JPG, etc.)
-- User-friendly interface
-- Optical Character Recognition (OCR) capability
+## Run
+```bash
+pip install -r requirements.txt
+python main.py
+```
 
-### Download Instructions:
-1. Visit the [Releases page](https://github.com/birendradoley/PDF-SCANNER-PRO/releases).
-2. Choose the latest version of PDF Scanner Pro.
-3. Download the appropriate installer for your operating system.
-4. Follow the installation instructions provided in the download.
+## Keyboard shortcuts
+- `Ctrl+N` New project
+- `Ctrl+O` Open project
+- `Ctrl+S` Save
+- `Ctrl+Shift+S` Save As
+- `Ctrl+Z` Undo
+- `Ctrl+Y` Redo
+- `Ctrl+D` Duplicate selected shape
+- `Delete` Delete selected shape
 
-## Usage Instructions
-After installation, simply launch the application and follow the on-screen prompts to start scanning your documents. 
-
-For any issues or feature requests, please raise an issue in the GitHub repository.
+## Notes
+- Project files are stored as JSON for portability.
+- This is a robust desktop CAD clone for learning/prototyping, not Autodesk AutoCAD itself.
