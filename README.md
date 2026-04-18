@@ -1,16 +1,33 @@
-# AutoCAD Pro Clone App (PyQt5)
+# AutoCAD Pro Clone Desktop App (PyQt5)
 
-A desktop CAD-style app inspired by premium AutoCAD workflows.
+A complete desktop CAD-style application built with PyQt5.
 
-## Included Pro-Style Features
-- Draw **lines**, **rectangles**, and **circles**.
-- **Selection & transform**: select, drag, duplicate, delete.
-- **Layer system**: create layers, switch active layer, set layer color, toggle layer visibility.
-- **Precision tools**: snap-to-grid, adjustable grid size, optional grid overlay.
-- **Navigation**: mouse-wheel zoom, zoom in/out buttons, reset view, middle-mouse pan.
-- **Editing history**: undo/redo.
-- **Properties/status feedback**: live start/end points, length, area, active layer.
-- **Project persistence**: save/load complete drawings to JSON project files (`*.json`) through DWG-labeled UI actions.
+## What this app now includes
+- Full desktop shell with **menu bar**, **toolbar**, **sidebar**, and **status bar**.
+- Drafting tools: **line**, **rectangle**, **circle**, and **select** mode.
+- Layer workflow:
+  - Add/remove layers
+  - Active layer switching
+  - Layer color changes
+  - Layer visibility toggling
+- Precision controls:
+  - Configurable grid
+  - Grid show/hide
+  - Snap to grid
+- Navigation:
+  - Mouse-wheel zoom
+  - Zoom in/out/reset buttons
+  - Middle-mouse pan
+- Editing:
+  - Select/move objects
+  - Duplicate and delete selected objects
+  - Undo/redo
+  - Clear canvas
+- File operations:
+  - New/Open/Save/Save As project files (`.json`)
+  - Export canvas to PNG
+  - Unsaved changes warning on close/new/open
+- Object inspector panel with type, layer, points, length, and area.
 
 ## Run
 ```bash
@@ -18,19 +35,16 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Controls
-- Tool dropdown: `line`, `rectangle`, `circle`, `select`.
-- Select mode:
-  - Click shape to select.
-  - Drag to move.
-  - `Delete` key to remove selected shape.
-  - `Ctrl+C` to duplicate selected shape.
-- History shortcuts:
-  - `Ctrl+Z` undo
-  - `Ctrl+Y` redo
-- Navigation:
-  - Mouse wheel to zoom
-  - Middle mouse button to pan
+## Keyboard shortcuts
+- `Ctrl+N` New project
+- `Ctrl+O` Open project
+- `Ctrl+S` Save
+- `Ctrl+Shift+S` Save As
+- `Ctrl+Z` Undo
+- `Ctrl+Y` Redo
+- `Ctrl+D` Duplicate selected shape
+- `Delete` Delete selected shape
 
-## Important Note
-This project emulates many premium CAD-style interactions but is still not a full AutoCAD replacement.
+## Notes
+- Project files are stored as JSON for portability.
+- This is a robust desktop CAD clone for learning/prototyping, not Autodesk AutoCAD itself.
