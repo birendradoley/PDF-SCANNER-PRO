@@ -1,22 +1,36 @@
-# PDF SCANNER PRO
+# AutoCAD Pro Clone App (PyQt5)
 
-## Project Documentation
+A desktop CAD-style app inspired by premium AutoCAD workflows.
 
-PDF Scanner Pro is a powerful application designed to convert physical documents into digital formats with high precision.
+## Included Pro-Style Features
+- Draw **lines**, **rectangles**, and **circles**.
+- **Selection & transform**: select, drag, duplicate, delete.
+- **Layer system**: create layers, switch active layer, set layer color, toggle layer visibility.
+- **Precision tools**: snap-to-grid, adjustable grid size, optional grid overlay.
+- **Navigation**: mouse-wheel zoom, zoom in/out buttons, reset view, middle-mouse pan.
+- **Editing history**: undo/redo.
+- **Properties/status feedback**: live start/end points, length, area, active layer.
+- **Project persistence**: save/load complete drawings to JSON project files (`*.json`) through DWG-labeled UI actions.
 
-### Features:
-- High-quality scanning
-- Multiple format support (PDF, JPG, etc.)
-- User-friendly interface
-- Optical Character Recognition (OCR) capability
+## Run
+```bash
+pip install -r requirements.txt
+python main.py
+```
 
-### Download Instructions:
-1. Visit the [Releases page](https://github.com/birendradoley/PDF-SCANNER-PRO/releases).
-2. Choose the latest version of PDF Scanner Pro.
-3. Download the appropriate installer for your operating system.
-4. Follow the installation instructions provided in the download.
+## Controls
+- Tool dropdown: `line`, `rectangle`, `circle`, `select`.
+- Select mode:
+  - Click shape to select.
+  - Drag to move.
+  - `Delete` key to remove selected shape.
+  - `Ctrl+C` to duplicate selected shape.
+- History shortcuts:
+  - `Ctrl+Z` undo
+  - `Ctrl+Y` redo
+- Navigation:
+  - Mouse wheel to zoom
+  - Middle mouse button to pan
 
-## Usage Instructions
-After installation, simply launch the application and follow the on-screen prompts to start scanning your documents. 
-
-For any issues or feature requests, please raise an issue in the GitHub repository.
+## Important Note
+This project emulates many premium CAD-style interactions but is still not a full AutoCAD replacement.
